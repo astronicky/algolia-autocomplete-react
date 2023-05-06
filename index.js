@@ -28,9 +28,8 @@ autocomplete({
   container: '#autocomplete', //Define where your search box goes in the DOM
   placeholder: 'Search for products', //Define placeholder text
   openOnFocus: true, //If true, dropdown appears as soon as users focuses the input to display trending searches 
-// debug: true, //If true, keeps the panel open when inspecting elements in your browser DevTools
   plugins: [querySuggestionsPlugin], //Add the Query Suggestions plugin
-  getSources({ query, state }) { 
+  getSources({ query }) { 
     if (!query) {
       return [];
     }
